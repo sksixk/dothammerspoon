@@ -10,7 +10,7 @@ function reloadConfig(files)
     end
 end
 
--- looks like it doesn't link the symlink
+-- looks like it doesn't like the symlink
 --hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 hs.pathwatcher.new(os.getenv("HOME") .. "/github/dothammerspoon/", reloadConfig):start()
 hs.alert.show("Config loaded")
